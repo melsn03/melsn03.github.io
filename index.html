@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#logo"><img src="logo.PNG" /></a>
+        </div>
+        <ul>
+          <li><a href="#presentation">Qui suis-je?</a></li>
+          <li><a href="#click">Compétences</a></li>
+          <li><a href="#point">Mes projets</a></li>
+          <li><a href="#pouf">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="insidebar">
+        <div class="polling_message"></div>
+        <div class="cylon_eye"></div>
+      </div>
+    </header>
+
+    <div class="accueil" id="logo">
+      <p>
+        Mélissa Simon
+      </p>
+    </div>
+
+    <div class="quisuisje" id="presentation">
+      <div class="baniere">
+        <h1>
+          Qui suis-je?
+        </h1>
+      </div>
+      <p>
+        Je m'appelle Mélissa Simon, j’ai 19 ans et je suis actuellement en BUT
+        MMI au centre de la Corse dans la ville de Corte. Je sors d'un bac
+        général spécialité théâtre et sciences économiques et scientifiques. Je
+        suis depuis petite toujours en contact avec internet, j'ai donc voulu
+        étudier cet aspect plus en profondeur.
+      </p>
+      <div>
+        <img src="moi.jpg" class="imagemoi" />
+        <img src="images.png" class="imagemoi" />
+      </div>
+    </div>
+
+    <div class="competences" id="click">
+      <div class="baniere">
+        <h1>
+          Compétences
+        </h1>
+      </div>
+
+      <div id="competence">
+        <div id="all">
+          <div class="compall">
+            <h4>HTML, CSS3</h4>
+            <progress class="skillbar" value="75" max="100"></progress>
+          </div>
+
+          <div class="compall">
+            <h4>PHP, MYSQL</h4>
+            <progress class="skillbar" value="50" max="100"></progress>
+          </div>
+
+          <div class="compall">
+            <h4>ILLUSTRATOR</h4>
+            <progress class="skillbar" value="70" max="100"></progress>
+          </div>
+
+          <div class="compall">
+            <h4>PHOTOSHOP</h4>
+            <progress class="skillbar" value="30" max="100"></progress>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="projets" id="point">
+      <div class="baniere">
+        <h1>
+          Mes projets
+        </h1>
+      </div>
+      <main>
+        <section>
+          <img src="photo.jpg" alt="" />
+          <a href="#" class="acol">PHOTOS</a>
+        </section>
+        <section>
+          <img src="aff.jpg" alt="" />
+          <a href="#" class="acol">DESIGN</a>
+        </section>
+        <section>
+          <img src="capture.jpg" alt="" />
+          <a href="#" class="acol">EXERCICES</a>
+        </section>
+      </main>
+    </div>
+
+    <div class="contact" id="pouf">
+      <div class="baniere">
+        <h1>
+          Contact
+        </h1>
+      </div>
+
+      <div class="carreformulaire">
+        <form action="" method="get" class="form-example">
+          <div class="formulaire">
+            <label for="name">Nom: </label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="formulaire">
+            <label for="prenom">Prénom: </label>
+            <input type="text" name="prenom" id="prenom" required />
+          </div>
+          <div class="formulaire">
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="email" required />
+          </div>
+          <div class="dismoi">
+            <label for="dismoi">Dis moi </label>
+            <textarea name="dismoi" id="dismoi" cols="30" rows="10"></textarea>
+          </div>
+          <div class="button">
+            <button type="submit">ENVOYER</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      MENTIONS LEGALS @ email : melissasimon2003@gmail.com; tel : 07 83 08 43 38
+    </footer>
+  </body>
+</html>

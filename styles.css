@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Norican&display=swap");
+@import url("https://fonts.googleapis.com/css2?family= Fira+Sans+Condensed:ital,wght@1,200&display=swap");
+body {
+  margin: 0;
+  background-color: #b7a07c;
+  font-family: Norican;
+}
+
+/*header*/
+
+header {
+  height: 14vh;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  padding: 8px;
+}
+
+/*/ barre noir header + animation complex /*/
+
+.insidebar {
+  background-color: black;
+  height: 2vh;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}
+
+.view_port {
+  background-color: black;
+  height: 25px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cylon_eye {
+  background-color: white;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.9) 25%,
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.9) 75%
+  );
+  color: white;
+  height: 100%;
+  width: 20%;
+
+  -webkit-animation: 4s linear 0s infinite alternate move_eye;
+  animation: 4s linear 0s infinite alternate move_eye;
+}
+
+@-webkit-keyframes move_eye {
+  from {
+    margin-left: -20%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+@keyframes move_eye {
+  from {
+    margin-left: -20%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+/*/ fin barre noir /*/
+
+img {
+  width: 115px;
+  height: 95px;
+  margin: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/*/ fin header /*/
+
+/* FORMULAIRE */
+
+.carreformulaire {
+  width: 35%;
+  height: 50vh;
+  padding: 2%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  bottom: 1vh;
+  background: #d9d9d9;
+  border: 1px solid #000000;
+  border-radius: 63px;
+  font-size: 1rem;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulaire {
+  width: 100%;
+  height: 4vh;
+  margin-top: 2vh;
+  border-radius: 100px;
+}
+
+.dismoi {
+  width: 100%;
+  height: 8vh;
+  margin-top: 2vh;
+}
+
+textarea {
+  background: #9b9999;
+  width: 100%;
+  height: 10vh;
+  font-size: 20px;
+  border-radius: 20px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: transparent;
+}
+
+.button {
+  width: 60%;
+  height: 4vh;
+  margin-top: 7vh;
+  display: flex;
+  justify-content: center;
+  border-radius: 100px;
+}
+
+input {
+  background: #9b9999;
+  width: 100%;
+  height: 2vh;
+  font-size: 20px;
+  border-radius: 50px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: transparent;
+}
+
+button {
+  color: white;
+  background: #9b9999;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  transition: 0.5s;
+
+  border: transparent;
+}
+button:hover {
+  box-shadow: none;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+/*Les différentes pages*/
+
+/*/ page accueil /*/
+
+.accueil {
+  height: 100vh;
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+}
+
+/* page qui suis-je*/
+
+.quisuisje {
+  height: 86vh;
+  background-color: #ccb693;
+}
+
+.quisuisje p {
+  text-align: center;
+  font-size: 1.7rem;
+  font-family: Fira Sans Condensed;
+}
+
+.imagemoi {
+  width: 22%;
+  height: 10%;
+  margin: 13%;
+  margin-top: 0%;
+  align-items: center;
+}
+
+/*/ page competence /*/
+
+img .competences {
+  height: 86vh;
+  background-color: #b7a07c;
+}
+
+.competences {
+  height: 86vh;
+  background-color: #b7a07c;
+}
+
+.skillbar {
+  object-fit: cover;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #b7a07c;
+}
+
+progress {
+  appearance: auto;
+  box-sizing: border-box;
+  display: inline-block;
+  block-size: 1.1em;
+  inline-size: 15em;
+  vertical-align: 3.5em;
+  writing-mode: horizontal-tb !important;
+  background-color: #b7a07c;
+}
+
+h4 {
+  font-family: auto;
+  font-weight: 400;
+  margin: 0;
+  margin-left: 25px;
+}
+
+h4 {
+  font-family: auto;
+  font-size: auto;
+  display: flex;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: auto;
+  font-weight: bold;
+}
+
+::-webkit-progress-value {
+  background-color: black;
+}
+
+::-webkit-progress-bar {
+  background-color: grey;
+}
+
+/* page projets */
+
+.projets {
+  height: 86vh;
+  background-color: #8a7655;
+}
+
+h1 {
+  font-size: 1.875rem;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+h2 {
+  color: #f5f5f5;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+p {
+  line-height: 1.4;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+/* Je centre les 3 colonnes */
+
+main {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70vh;
+  align-items: center;
+}
+
+/*je commence par cibler ce qui est commun aux 3 colonnes*/
+section {
+  height: 35vh;
+  width: 30%;
+  /* max-width: 370px; */
+  background-color: #eeeeee;
+  padding: 24px 40px;
+  text-align: center;
+  margin: 5px;
+}
+section img {
+  width: 400px;
+  height: 280px;
+}
+
+section:nth-of-type(1) {
+  border-top: solid 10px black;
+}
+
+section:nth-of-type(2) {
+  margin-left: 30px;
+  margin-right: 30px;
+  border-top: solid 10px black;
+}
+
+section:nth-of-type(3) {
+  border-top: solid 10px black;
+}
+
+/* aspect des liens */
+
+/*je commence par cibler ce qui est commun à tous les liens*/
+section a {
+  text-decoration: none;
+  color: white;
+  transition: color ease 1s, background-color ease 1s;
+  display: flex;
+  width: 160px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+.acol {
+  background-color: black;
+}
+
+.acol:hover {
+  background-color: #8a7655;
+}
+
+@media (max-width: 715px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  img {
+    display: none;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+  }
+  a {
+    font-size: 18px;
+  }
+  header {
+    position: flex;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*page contact*/
+
+.contact {
+  height: 79vh;
+  background-color: #5a4b31;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0%;
+  background-color: black;
+  color: #fff;
+  align-items: center;
+  height: 8vh;
+  width: 100%;
+  font-family: auto;
+}
+
+/*//*/
+
+.baniere {
+  width: 100%;
+  height: 14vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: black #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10px;
+  border: 4px solid white;
+}
+
+/* images de mes projets */
+.projets img {
+  height: 60%;
+  width: 100%;
+  max-width: 60%;
+}
+/*//*/
+
+#presentation {
+  scroll-margin: 14vh;
+}
+
+#click {
+  scroll-margin: 14vh;
+}
+
+#point {
+  scroll-margin: 14vh;
+}
